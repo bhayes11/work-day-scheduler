@@ -11,13 +11,13 @@ This project uses jQuery in order to create a work day scheduler. The user is ab
 
 ## Website
 
-View the website [here](https://bhayes11.github.io/password-generator/)
+View the website [here](https://bhayes11.github.io/work-day-scheduler/)
 
-Image 1 ![Prompt](/assets/first.jpg)
+Image 1 ![image 1](/assets/first.jpg)
 
-Image 2 ![Confirm](/assets/second.jpg)
+Image 2 ![image 2](/assets/second.jpg)
 
-Image 3 ![Generated Password](/assets/third.jpg)
+Image 3 ![image 3](/assets/third.jpg)
 
 ## License
 
