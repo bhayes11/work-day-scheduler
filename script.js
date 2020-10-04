@@ -6,7 +6,7 @@ $(document).ready(function () {
   //Function Calls
   //Event Listeners
   $("#currentDay").text(moment().format("dddd MMMM Do YYYY, h:mm a"));
-  $(".container").append("<div>hi</div>");
+  //$(".container").append("<div>hi</div>");
 });
 
 //Div for Day, input field & button.
