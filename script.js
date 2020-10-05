@@ -1,3 +1,10 @@
+//array
+var time = [9, 10, 11, 12, 1, 2, 3, 4, 5];
+for (var i = 0; i < time.length; i++) {
+  var timeStorage = localStorage.getItem(time[i]);
+  console.log(time);
+}
+
 $(document).ready(function () {
   //console.log("hello");
   //Dom Variables
@@ -12,3 +19,5 @@ $(document).ready(function () {
 //Div for Day, input field & button.
 //loop through array of numbers
 //if < currentHour then gray, if = currentHour then red, if > currentHour then green
+
+//$(".saveBtn").click(function() {
