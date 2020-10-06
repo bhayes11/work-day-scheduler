@@ -1,16 +1,37 @@
 $(document).ready(function () {
-  //array
-  var time = [9, 10, 11, 12, 1, 2, 3, 4, 5];
-  for (var i = 0; i < time.length; i++) {
-    var timeStorage = localStorage.getItem(time[i]);
-    console.log(time);
-  }
+  $("#currentDay").text(moment().format("dddd MMMM Do YYYY, h:mm a"));
 
-  var row = $("<div>");
-  var hour = $("<div>");
-  var description = $("<textarea>");
-  var saveBtn = $("<button>");
-  hour.addClass("hour col-sm-1");
+  //array
+  var timeDisplay = [9, 10, 11, 12, 13, 14, 15, 16, 17];
+  for (var i = 0; i < timeDisplay.length; i++) {
+    //var timeStorage = localStorage.getItem(time[i]);
+    console.log(timeDisplay);
+
+    //Variables for the function
+    var row = $("<div>");
+    var hour = $("<div>");
+    var description = $("<textarea>");
+    var saveBtn = $("<button>");
+
+    //CSS classes
+    hour.addClass("hour col-sm-1");
+    description.addClass("description col-sm-10");
+    saveBtn.addClass("saveBtn col-sm-1");
+    row.addClass("row time-block");
+
+    hour.attr("timeAttribute", timeDisplay[i].value);
+    description.attr("descriptionAttribute", timeDisplay[i].value);
+    saveBtn.attr("buttonAttribute", timeDisplay[i].value);
+
+    hour.text(timeDisplay[i].display);
+    description.text(timeDisplay[i].display);
+    saveBtn.text(timeDisplay[i].display);
+
+    row.append(hour);
+    row.append(description);
+    row.append(saveBtn);
+    $(".container").append(row);
+  }
 
   //console.log("hello");
   //Dom Variables
@@ -18,8 +39,6 @@ $(document).ready(function () {
   //Function Definitions
   //Function Calls
   //Event Listeners
-  $("#currentDay").text(moment().format("dddd MMMM Do YYYY, h:mm a"));
-  //$(".container").append("<div>hi</div>");
 });
 
 //Div for Day, input field & button.
