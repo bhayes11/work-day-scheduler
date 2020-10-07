@@ -8,6 +8,7 @@ $(document).ready(function () {
     console.log(timeDisplay);
 
     //Variables for the function
+
     var row = $("<div>");
     var hour = $("<div>");
     var description = $("<textarea>");
@@ -19,18 +20,33 @@ $(document).ready(function () {
     saveBtn.addClass("saveBtn col-sm-1");
     row.addClass("row time-block");
 
-    hour.attr("timeAttribute", timeDisplay[i].value);
+    /*hour.attr("timeAttribute", timeDisplay[i].value);
     description.attr("descriptionAttribute", timeDisplay[i].value);
-    saveBtn.attr("buttonAttribute", timeDisplay[i].value);
+    saveBtn.attr("buttonAttribute", timeDisplay[i].value);*/
 
-    hour.text(timeDisplay[i].display);
-    description.text(timeDisplay[i].display);
-    saveBtn.text(timeDisplay[i].display);
+    //hour.text(timeDisplay[i].display);
+    //description.text(timeDisplay[i].display);
+    //saveBtn.text(timeDisplay[i].display);
 
     row.append(hour);
     row.append(description);
     row.append(saveBtn);
     $(".container").append(row);
+
+    //Rows change color based on time
+    if (timeDisplay < currentDay) {
+      description.addClass("past");
+      // description.removeClass("future");
+      //description.removeClass("present");
+    } else if (timeDisplay === currentDay) {
+      //description.removeClass("past");
+      //description.removeClass("future");
+      description.addClass("present");
+    } else {
+      //description.removeClass("present");
+      // description.removeClass("past");
+      description.addClass("future");
+    }
   }
 
   //console.log("hello");
