@@ -13,9 +13,9 @@ This project uses jQuery in order to create a work day scheduler. The user is ab
 
 View the website [here](https://bhayes11.github.io/work-day-scheduler/)
 
-Image 1 ![image 1](/assets/first.jpg)
+Image 1 ![image 1](/assets/first.png)
 
-Image 2 ![image 2](/assets/second.jpg)
+Image 2 ![image 2](/assets/second.png)
 
 ## License
 
