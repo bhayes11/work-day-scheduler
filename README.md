@@ -17,8 +17,6 @@ Image 1 ![image 1](/assets/first.jpg)
 
 Image 2 ![image 2](/assets/second.jpg)
 
-Image 3 ![image 3](/assets/third.jpg)
-
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/#) License
