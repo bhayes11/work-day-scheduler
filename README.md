@@ -2,7 +2,7 @@
 
 ## Description
 
-This project uses jQuery in order to create a work day scheduler. The user is able to input data for each hour in a working day.
+Our minds begin to quickly assess the day the moment our eyes pop open in the morning. Distractions and productivity fight for our attention and time all day long. The jQuery work day scheduler positions the user for productivity. The user is able to input data for each hour in a working day and save the activity as the day progresses.
 
 ## Built With
 
